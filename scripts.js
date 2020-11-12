@@ -7,4 +7,8 @@ function changeTheme(){
 
     isWhite= !isWhite;
 
+    function hapn(){
+        console.log('ahta');
+    }
+    hapn();
 }
