@@ -1,6 +1,20 @@
 * {
     box-sizing: border-box;
   }
+
+  .entr{
+    border-radius: 23px;
+    display: grid;
+    height: 35px;
+    background-color: black;
+    border: none;
+    color:whitesmoke;
+    text-align: center;
+    outline: none;
+  }
+  .entr:hover{
+    background-color: #3a1722 ;
+  }
   
   .row::after {
     content: "";
@@ -22,10 +36,11 @@
    
     background-color: #33c7cc;
     color: #ffffff;
-    padding: 15px;
+    height: 20%;
     position: fixed;
     z-index: 2;
     text-align: center;
+    width: 100%;
   }
   .resto{
       padding-top: 10%; 
