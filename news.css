@@ -1,0 +1,54 @@
+body,ul,li,p{
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+header{
+    background-color: #1d1e1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;    
+}
+
+.menu li{
+    background-color:rgb(10, 33, 76);
+    margin: 2px;
+}
+.menu li a{
+    padding: 10px;
+    display: block;
+}
+/* flex */
+
+img{
+    max-width: 100%;
+    /* display: block; */
+}
+
+h1{
+ display: block;
+ text-align: center;
+}
+.flexb{
+    display: flex;
+    background-color: wheat; 
+    flex-wrap: wrap;
+}
+.flexb > div{
+    flex: 1 1 300px;
+}
+div > p{
+    text-align: center;
+}
