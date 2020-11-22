@@ -11,6 +11,7 @@ a{
 }
 p{
     padding: 4px;
+    align-items: center;
 }
 body{
     margin-bottom: 100px;
@@ -71,28 +72,38 @@ div > p{
     max-width: 1200px;    
     margin: 0 auto;        
     grid-gap: 10px;
-    justify-content: center;
+    
 }
 .gridb > div:nth-child(n+4){
     display: grid;
-    grid-template-columns: 1fr 1fr ;    
-    align-items: center;
+    grid-template-columns: 1fr 1fr ;  
+    
+    
     
 }
 .gridb > div.ads{
-    grid-row: 2/4;
-    grid-column: 3;
+    grid-row: 3/4;
+    grid-column: 1;
     border: 5px dashed palegreen;
-    display: block;
+    
 }
 
 /* media qr */
 
 @media (max-width:600px){
-    .gridb1{
-        grid-template-columns: 1fr 1fr ;
+
+    .gridb{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .gridb > div:nth-child(n+4){
-        grid-template-columns: 1fr  ;
+    .gridb >div.ads{
+        grid-row: auto;
+        grid-column: auto;
+        order:-1;
+    }
+    .gridb > div:nth-child(n+1){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
     }
 }
