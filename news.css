@@ -9,6 +9,12 @@ a{
     text-decoration: none;
     color: wheat;
 }
+p{
+    padding: 4px;
+}
+body{
+    margin-bottom: 100px;
+}
 header{
     background-color: #1d1e1d;
     display: flex;
@@ -34,7 +40,8 @@ header{
 
 img{
     max-width: 100%;
-    /* display: block; */
+    display: block;
+    
 }
 
 h1{
@@ -45,10 +52,47 @@ h1{
     display: flex;
     background-color: wheat; 
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 .flexb > div{
-    flex: 1 1 300px;
+    flex: 1 1 200px;
+    margin: 12px;
 }
 div > p{
     text-align: center;
+}
+/* grid */
+
+.gridb{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 1200px;    
+    margin: 0 auto;        
+    grid-gap: 10px;
+    justify-content: center;
+}
+.gridb > div:nth-child(n+4){
+    display: grid;
+    grid-template-columns: 1fr 1fr ;    
+    align-items: center;
+    
+}
+.gridb > div.ads{
+    grid-row: 2/4;
+    grid-column: 3;
+    border: 5px dashed palegreen;
+    display: block;
+}
+
+/* media qr */
+
+@media (max-width:600px){
+    .gridb1{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .gridb > div:nth-child(n+4){
+        grid-template-columns: 1fr  ;
+    }
 }
