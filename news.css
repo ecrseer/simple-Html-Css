@@ -15,6 +15,7 @@ p{
 }
 body{
     margin-bottom: 100px;
+    
 }
 header{
     background-color: #1d1e1d;
@@ -23,6 +24,8 @@ header{
     align-items: center;
     padding:20px;
     flex-wrap: wrap;
+    attac
+    
 }
 
 .menu{
@@ -96,7 +99,7 @@ div > p{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .gridb >div.ads{
+    .gridb > div.ads{
         grid-row: auto;
         grid-column: auto;
         order:-1;
@@ -106,4 +109,74 @@ div > p{
         grid-template-columns: 1fr 1fr;
 
     }
+}
+/* css grid 2 */
+
+.grid2{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    padding:10px;
+    margin: 0 auto;
+
+}
+.sidebar > div{
+    margin-bottom: 20px;
+}
+@media (max-width:600px){
+    .grid2{
+        grid-template-columns: 1fr;
+    }
+    .sidebar{
+        display:flex;
+        overflow: scroll;
+    }
+    .sidebar > div {
+        
+        flex: 1 0 200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+/* grid 3 css */
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;    
+}
+.grid3 > div{
+    display: grid;
+}
+.grid3 > div > img {
+    border: 1px dashed;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.grid3 > div:first-child img{    
+    grid-row: 1/3;
+}
+.grid3 > div > p{
+    background-color: rgb(10, 33, 76,0.6);
+    color:wheat;
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 2/5;
+    align-self: end;
+}
+.grid3 > div:nth-child(n+6){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* para */
+.fundo{
+    background-color: red;
+    background-attachment: fixed;
 }
