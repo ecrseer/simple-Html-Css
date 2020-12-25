@@ -189,3 +189,32 @@ div > p{
     color: green;
     background-attachment: fixed;
 }
+.dimage{
+    width: 480px;
+    height: auto;
+    border: 1px solid gray;
+    margin: 150px auto;
+
+}
+.ratype:checked{
+    width: 500px;
+}
+.dimage > div{
+    width: 400px;
+    height:260px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    width: 400%;
+}
+.slide > img:nth-child(2){
+    
+}
+.normalp{
+    font-family: fantasy;
+}
+.state--atencao{
+    border:2px dashed red;
+}
